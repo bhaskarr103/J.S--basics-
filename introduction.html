@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPECIFY THE SPEED CURVE OF TRANSITION.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smokum&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    * {
+        background-color:firebrick;
+        margin: 0 0 0 0;
+        font-family: 'Smokum', cursive;
+    }
+
+    div {
+        width: 100px;
+        height: 100px;
+        transition: width 2s, height 2s, transform 2s;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #div1 {transition-timing-function:linear;
+        background-color: rgb(31, 45, 154);
+        border-radius: 2rem;
+    }
+    #div2 {transition-timing-function:ease;
+        background-color: rgb(210, 190, 143);
+        border-radius: 2rem;
+    }
+    #div3 {transition-timing-function:ease-in;
+        background-color: rgb(118, 166, 186);
+        border-radius: 2rem;
+    }
+    #div4 {transition-timing-function:ease-out;
+        background-color: rgb(119, 195, 110);
+        border-radius: 2rem;
+    }
+    #div5 {transition-timing-function:ease-in-out;
+        background-color: rgb(180, 135, 166);
+        border-radius: 2rem;
+    }
+
+    div:hover {
+        width: 300px;
+        height: 300px;
+        transform: rotate(180deg);
+    }
+
+    .container_cc {
+        margin-left: 0%;
+    }
+
+    .container_cc1 {
+        margin-left: 25%;
+        margin-top: -6%;
+    }
+
+    .container_cc2 {
+        margin-left: 50%;
+        margin-top: -6%;
+    }
+
+    .container_cc3 {
+        margin-left: 75%;
+        margin-top: -6%;
+    }
+</style>
+<body>
+    <div class="container_cc">
+        <div id="div1">linear</div><br>
+        <div id="div2">ease</div><br>
+        <div id="div3">ease-in</div><br>
+        <div id="div4">ease-out</div><br>
+        <div id="div5">ease-in-out</div><br>
+    </div>
+
+    <div class="container_cc1">
+        <div id="div1">linear</div><br>
+        <div id="div2">ease</div><br>
+        <div id="div3">ease-in</div><br>
+        <div id="div4">ease-out</div><br>
+        <div id="div5">ease-in-out</div><br>
+    </div>
+
+    <div class="container_cc2">
+        <div id="div1">linear</div><br>
+        <div id="div2">ease</div><br>
+        <div id="div3">ease-in</div><br>
+        <div id="div4">ease-out</div><br>
+        <div id="div5">ease-in-out</div><br>
+    </div>
+
+    <div class="container_cc3">
+        <div id="div1">linear</div><br>
+        <div id="div2">ease</div><br>
+        <div id="div3">ease-in</div><br>
+        <div id="div4">ease-out</div><br>
+        <div id="div5">ease-in-out</div><br>
+    </div>
+    
+</body>
+</html>

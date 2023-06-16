@@ -1,0 +1,34 @@
+In CSS, keyframes are used for animations. It gives you more control over the animation you want to perform. The animation is created by gradually changing from one style to another. You can change the CSS styles as many times as you want.
+
+
+
+@keyframes [name]{
+
+      from{
+
+        [styles];
+
+      }
+
+      to{
+
+        [styles];
+
+      }
+
+
+The [name] value defines the name of the animation. You can name it anything you want.
+The [styles] value defines the CSS style properties.
+Keep in mind that these do not have any selectors on them. They are at the root of the CSS page.
+
+
+--------------------------------------------------------------
+
+Keyframes Timing Functions :
+
+The timing function is used to control the rate of animation. We can use the following values for better understanding:
+
+Linear: It means the transition will be constant from start to end.
+Ease:  It means that the animation will start slowly, and then after a time period, the speed will increase, and before the end speed will slow down again.
+Ease-in: It is very similar to ease, but the animation will end quickly.
+Ease-out: It is very similar to ease. The only difference is that it starts fast.
